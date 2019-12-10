@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WebApplication12.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="Content/styles.css">
+</head>
+<body style="background-color: lightgray">
+    <form id="form1" runat="server">
+
+        <div style="margin-left: 10%; margin-right: 10%; margin-top: 2%; background-color: white;">
+
+            <div class="row">
+                <div class="column">
+                    <img src="Content/gerb.png" alt="Gerb" style="width: 15%">
+                </div>
+                <div class="column">
+                    <p style="width: 25%">
+                        НАП
+                </div>
+                <div class="column">
+                    <img src="Content/logo-m-bg.png" alt="Logo" style="width: 35%">
+                </div>
+            </div>
+            <div style="margin-left: 5%; margin-right: 5%;">
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hyperlink1" NavigateUrl="E_Services.aspx" Text="Е-Услуги" runat="server" />
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hyperlink2" NavigateUrl="Taxes.aspx" Text="ДАНЪЦИ" runat="server" />
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hyperlink3" NavigateUrl="Insurance.aspx" Text="ОСИГУРЯВАНЕ" runat="server" />
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hyperlink4" NavigateUrl="Payments.aspx" Text="ПЛАЩАНЕ" runat="server" />
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hyperlink5" NavigateUrl="Interstat.aspx" Text="ИНТЕРСТАТ" runat="server" />
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hyperlink6" NavigateUrl="Control.aspx" Text="ФИСКАЛЕН КОНТРОЛ" runat="server" />
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hyperlink7" NavigateUrl="Products.aspx" Text="ПРОГРАМНИ ПРОДУКТИ" runat="server" />
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hyperlink8" NavigateUrl="QuestionsAnswers.aspx" Text="ВЪПРОСИ И ОТГОВОРИ" runat="server" />
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">OЩЕ</a>
+                        <div class="dropdown-content">
+                            <a href="Index.aspx">Home</a>
+                            <a href="Index.aspx">Home</a>
+                            <a href="Index.aspx">Home</a>
+                            <a href="Index.aspx">Home</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-left: 5%; margin-right: 5%; margin-top: 2%; background-color: #aaa;">
+
+                <asp:ContentPlaceHolder ID="body" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
